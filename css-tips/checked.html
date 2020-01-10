@@ -1,0 +1,21 @@
+<style>
+    .is-checked {
+        display: none;
+    }
+
+    #my-checkbox:checked + span .is-checked {
+        display: inline;
+    }
+
+    #my-checkbox:checked + span .not-checked {
+        display: none;
+    }
+</style>
+
+<label for="my-checkbox">
+    <input id="my-checkbox" type="checkbox" />
+    <span>
+    <span class="not-checked">Not Checked</span>
+    <span class="is-checked">Checked</span>
+    </span>
+</label>
